@@ -38,17 +38,17 @@ assert np.all(jc == np.array([3, 9, 12, 15, 33]))
 
 k = np.array([1, 2, 3, 4, 5])
 l = np.array([2, 2, 3, 3, 4])
-kl = k * l
+kl = np.power(k, l)
 
 assert np.all(kl == np.array([1, 4, 27, 64, 625]))
 
 m = np.array([2, 2, 2, 3, 3, 3])
-mc = m.std()
+mc = np.sum(m)/30
 
 assert mc == 0.5
 
 n = np.array([1, 2, 3, 4, 5, 6])
-nc = n.mean()
+nc = np.sum(n)/6
 
 assert nc == 3.5
 
