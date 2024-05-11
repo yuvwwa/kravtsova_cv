@@ -92,3 +92,4 @@ for i, region in enumerate(regions):
         plt.savefig(path / f"{i}.png")
     result[symbol] += 1
 print(result)
+//helloo
